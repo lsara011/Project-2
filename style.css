@@ -149,7 +149,27 @@ animation: scrollLeft 10s linear infinite;
 .pleatures h2{
   font-family: Pleatures;
   font-size: 2vw;
-  animation: bounce 0.25s linear infinite;
+  animation: bounce 0.10s ease infinite;
+}
+header h5{
+  font-size: 1.5vw;
+}
+.social-media {
+  margin: 10px; /* Keep margin */
+}
+
+.social-media i {
+  font-size: 1.5vw; /* Adjust font size */
+  padding: 10px; /* Keep padding */
+  color: red;
+}
+
+.social-media a:hover {
+  text-shadow: 2px 2px black;
+}
+
+.social-media a {
+  transition: ease 0.25s;
 }
 
 @keyframes bounce {
