@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Cristiano Signature';
+  src: url(Cristiano\ Signature\ TTF.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Hypeday;
+  src: url(Hypeday.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Pleatures;
+  src: url(PleaturesDemoOutline-2O858.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Nightmare Pills';
+  src: url(NightmarePills-BV2w.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Born To Ride';
+  src: url(BornToRide-8MVOB.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Dingbats;
+  src: url(BuDingbatsSansPurpose-njmY.ttf);
+}
+
+@font-face {
+  font-family: Sillystring;
+  src: url(Mgsillystring-yp5q.ttf);
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+
+h2{
+  padding-top: 100px;
+}
+
+.title h1{
+  font-family: Hypeday;
+  font-size: 3vw;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  border-bottom: 2px black solid;
+}
+
+nav a{
+  font-family: 'Bebas Neue';
+  font-size: 3vw;
+  text-decoration: underline;
+  margin: 10px;
+  color: black;
+}
+
+section{
+  text-align: center;
+  overflow: hidden;
+}
+
+section h2{
+  font-size: 1.65vw;
+  line-height: 3.75vw;
+}
+
+.nightmare-pills h2 {
+font-family: 'Nightmare Pills';
+letter-spacing: 2px;
+animation: scrollLeft 10s linear infinite;
+}
+
+
+.Bebas-neue h2{
+  font-family: 'Bebas Neue';
+  font-size: 1vw;
+  animation: scrollright 10s linear infinite;
+}
+
+.humane h2{
+  font-family: Humane;
+  font-size: 3vw;
+  animation: scrollLeft 9s ease-in-out infinite;
+}
+
+.cristiano-signature h2{
+  font-family: 'Cristiano Signature';
+  font-size: 1.45vw;
+  animation: scrollright 3s steps(5,end) infinite;
+}
+
+.BornToRide h2{
+  font-family:'Born To Ride';
+  font-size: 2.5vw;
+  overflow: visible;
+  animation: scrollright ease 10s infinite;
+  
+}
+.wiggle-scroll span {
+  display: inline-block;
+  animation: wiggle 1s ease-in-out infinite alternate;
+}
+
+.dingbats h2{
+  font-family: Dingbats;
+  font-size: 6vw;
+  letter-spacing: 4px;
+}
+
+.sillystring h2{
+  font-family: Sillystring;
+  font-size: 1.55vw;
+  letter-spacing: 2px;
+  animation: scrollLeft 15s ease-in infinite;
+}
+.sillystring h2:hover{
+  color: orange;
+  transform: rotateY(180deg);
+}
+
+.heart{
+  font-family: 'Bebas Neue';
+  color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heart h2{
+  font-size: 3vw;
+  animation: heartBeat 1s infinite linear;
+  transform: rotate(270deg);
+  animation-timing-function: steps(10);
+}
+
+.pleatures h2{
+  font-family: Pleatures;
+  font-size: 2vw;
+  animation: bounce 0.25s linear infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust bounce height */
+  }
+}
+
+@keyframes heartBeat{
+  0%{
+    scale: 1.1;
+  }
+  85%[
+    scale: 1;
+  ]
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1deg); /* Adjust based on the desired wiggle effect */
+  }
+}
+
+@keyframes scrollright{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+
+@keyframes scrollLeft {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
