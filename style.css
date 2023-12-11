@@ -33,6 +33,13 @@
   src: url(Mgsillystring-yp5q.ttf);
 }
 
+@font-face {
+  font-family: Humane;
+  src: url(Humane-Regular.ttf);
+}
+
+
+
 *{
   margin:0;
   padding: 0;
@@ -43,7 +50,7 @@ body{
 }
 
 h2{
-  padding-top: 100px;
+  margin-top: 85px;
 }
 
 .title h1{
@@ -151,7 +158,7 @@ animation: scrollLeft 10s linear infinite;
   font-size: 2vw;
   animation: bounce 0.10s ease infinite;
 }
-header h5{
+header h4{
   font-size: 1.5vw;
 }
 .social-media {
@@ -159,7 +166,7 @@ header h5{
 }
 
 .social-media i {
-  font-size: 1.5vw; /* Adjust font size */
+  font-size: 2.5vw; /* Adjust font size */
   padding: 10px; /* Keep padding */
   color: red;
 }
@@ -185,9 +192,11 @@ header h5{
   0%{
     scale: 1.1;
   }
-  85%[
-    scale: 1;
-  ]
+  95%{
+    scale: 1;   
+  }
+ 
+  
 }
 @keyframes wiggle {
   0% {
@@ -215,4 +224,41 @@ header h5{
   100%{
     transform: translateX(-100%);
   }
+}
+
+@media only screen and (max-width: 1024px){
+  .nightmare-pills h2{
+    font-size: 2.3vw;
+  }
+
+  .sillystring h2{
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 475px){
+  header{
+    flex-direction: column;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .title h1{
+font-size: 4vw;
+  }
+  .title h4{
+font-size: 3vw;
+margin-top: 10%;
+  }
+
+
+  .social-media i{
+    font-size: 5vw;
+  }
+
+  nav a{
+    font-size: 6vw;
+    text-decoration: none;
+  }
+  
 }
